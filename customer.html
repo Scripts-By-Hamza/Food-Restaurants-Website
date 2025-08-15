@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Table - Mom's Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="header_area">
+        <a href="index.html" class="logo">MOM's KITCHEN</a>
+
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" id="menu_checkbox"><i class='bx bx-menu'></i></label>
+
+        <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Menu</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="customer.html" class="active">Reserve Table</a></li>
+        </ul>
+
+        <div class="nav_icon">
+            <i class='bx bx-search'></i>
+            <i class='bx bx-cart'></i>
+        </div>
+    </header>
+
+    <!-- Reservation Section -->
+    <section class="reservation" id="reservation">
+        <div class="middle_text">
+            <h4>Reserve a Table</h4>
+            <h2>Book Your Spot</h2>
+        </div>
+
+        <div class="reservation_form_container">
+            <form id="reservationForm" onsubmit="handleReservationSubmit(event)">
+                <div class="form_group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form_group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form_group">
+                    <input type="tel" name="phone" placeholder="Your Phone" required>
+                </div>
+                <div class="form_group">
+                    <input type="date" name="date" required>
+                </div>
+                <div class="form_group">
+                    <input type="time" name="time" required>
+                </div>
+                <div class="form_group">
+                    <input type="number" name="guests" placeholder="Number of Guests" min="1" required>
+                </div>
+                <div class="form_group full_width">
+                    <textarea name="requests" placeholder="Special Requests (optional)" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn">Reserve Now<i class='bx bxs-right-arrow'></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer_content">
+            <div class="footer_section">
+                <div class="footer_logo">
+                    <a href="#" class="logo">MOM's KITCHEN</a>
+                    <p>Serving delicious, homemade meals with love and care. Experience the true taste of authentic cuisine in a warm, welcoming atmosphere.</p>
+                    <div class="footer_social">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_section">
+                <h3>Quick Links</h3>
+                <ul class="footer_links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="shop.html">Our Menu</a></li>
+                    <li><a href="index.html#customer">Reviews</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_section">
+                <h3>Services</h3>
+                <ul class="footer_links">
+                    <li><a href="#">Dine In</a></li>
+                    <li><a href="#">Take Away</a></li>
+                    <li><a href="#">Home Delivery</a></li>
+                    <li><a href="#">Catering</a></li>
+                    <li><a href="#">Private Events</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_section">
+                <h3>Contact Info</h3>
+                <div class="footer_contact">
+                    <div class="contact_item">
+                        <i class='bx bx-location-plus'></i>
+                        <span>Natore, Naldanga, Brahmapur</span>
+                    </div>
+                    <div class="contact_item">
+                        <i class='bx bx-phone'></i>
+                        <span>01300142072</span>
+                    </div>
+                    <div class="contact_item">
+                        <i class='bx bx-envelope'></i>
+                        <span>info@momskitchen.com</span>
+                    </div>
+                    <div class="contact_item">
+                        <i class='bx bx-time'></i>
+                        <span>Mon-Sun: 9AM-11PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="footer_bottom_content">
+                <p>&copy; 2024 Mom's Kitchen. All rights reserved.</p>
+                <div class="footer_bottom_links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleReservationSubmit(event) {
+            event.preventDefault();
+            alert('Thank you! Your reservation has been submitted.');
+            document.getElementById('reservationForm').reset();
+        }
+    </script>
+</body>
+
+</html>

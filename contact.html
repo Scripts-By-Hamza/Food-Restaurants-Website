@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Mom's Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header_area">
+        <a href="index.html" class="logo">MOM's KITCHEN</a>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" id="menu_checkbox"><i class='bx bx-menu'></i></label>
+        <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Menu</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+            <li><a href="customer.html">Reserve Table</a></li>
+        </ul>
+        <div class="nav_icon">
+            <i class='bx bx-search'></i>
+            <i class='bx bx-cart'></i>
+        </div>
+    </header>
+
+    <section class="contact" id="contact" style="padding-top: 120px;">
+        <div class="contact_content">
+            <div class="middle_text">
+                <h4>Get In Touch</h4>
+                <h2>Contact Us</h2>
+            </div>
+
+            <div class="contact_wrapper">
+                <div class="contact_info">
+                    <div class="contact_img">
+                        <div class="img1">
+                            <img src="img/f1.png" alt="F1 Photos">
+                        </div>
+                        <div class="img1">
+                            <img src="img/f2.png" alt="F2 Photos">
+                        </div>
+                    </div>
+
+                    <div class="contact_text">
+                        <p>We'd love to hear from you! Whether you have questions about our menu, want to make a reservation, or need catering services, we're here to help.</p>
+                        <div class="social">
+                            <a href="#" class="clr"><i class='bx bxl-instagram'></i></a>
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-github'></i></a>
+                            <a href="#"><i class='bx bxl-google'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="detels">
+                        <div class="del">
+                            <a href="#"><i class='bx bx-location-plus'></i>Natore, Naldanga, Brahmapur.</a>
+                        </div>
+                        <div class="del">
+                            <a href="tel:01300142072"><i class='bx bx-phone'></i>01300142072</a>
+                        </div>
+                        <div class="del">
+                            <a href="mailto:info@momskitchen.com"><i class='bx bx-envelope'></i>info@momskitchen.com</a>
+                        </div>
+                        <div class="del">
+                            <a href="#"><i class='bx bx-time'></i>Mon-Sun: 9AM-11PM</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact_form">
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                        <div class="form_group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form_group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form_group">
+                            <input type="tel" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form_group">
+                            <select name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="reservation">Table Reservation</option>
+                                <option value="catering">Catering Services</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form_group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message<i class='bx bxs-right-arrow'></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <footer class="footer">
+        <div class="footer_content">
+            <div class="footer_section">
+                <div class="footer_logo">
+                    <a href="index.html" class="logo">MOM's KITCHEN</a>
+                    <p>Serving delicious, homemade meals with love and care. Experience the true taste of authentic cuisine in a warm, welcoming atmosphere.</p>
+                    <div class="footer_social">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_section">
+                <h3>Quick Links</h3>
+                <ul class="footer_links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="shop.html">Our Menu</a></li>
+                    <li><a href="index.html#customer">Reviews</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_section">
+                <h3>Services</h3>
+                <ul class="footer_links">
+                    <li><a href="#">Dine In</a></li>
+                    <li><a href="#">Take Away</a></li>
+                    <li><a href="#">Home Delivery</a></li>
+                    <li><a href="#">Catering</a></li>
+                    <li><a href="#">Private Events</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_section">
+                <h3>Contact Info</h3>
+                <div class="footer_contact">
+                    <div class="contact_item">
+                        <i class='bx bx-location-plus'></i>
+                        <span>Natore, Naldanga, Brahmapur</span>
+                    </div>
+                    <div class="contact_item">
+                        <i class='bx bx-phone'></i>
+                        <span>01300142072</span>
+                    </div>
+                    <div class="contact_item">
+                        <i class='bx bx-envelope'></i>
+                        <span>info@momskitchen.com</span>
+                    </div>
+                    <div class="contact_item">
+                        <i class='bx bx-time'></i>
+                        <span>Mon-Sun: 9AM-11PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="footer_bottom_content">
+                <p>&copy; 2024 Mom's Kitchen. All rights reserved.</p>
+                <div class="footer_bottom_links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+     </footer>
+</body>
+</html>
