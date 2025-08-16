@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserve Table - Mom's Kitchen</title>
+    <title>Order Confirmed - Mom's Kitchen</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order-confirmed.css">
+    <!-- Boxicon Link Here -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <script src="script.js" defer></script>
 </head>
 
 <body>
     <!-- Navigation -->
     <header class="header_area">
-        <a href="index.html" class="logo">MOM's KITCHEN</a>
+        <a href="#" class="logo">MOM's KITCHEN</a>
 
         <input type="checkbox" id="checkbox">
         <label for="checkbox" id="menu_checkbox"><i class='bx bx-menu'></i></label>
@@ -22,7 +23,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">Menu</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="customer.html" class="active">Reserve Table</a></li>
+            <li><a href="customer.html">Reserve Table</a></li>
         </ul>
 
         <div class="nav_icon">
@@ -31,38 +32,62 @@
         </div>
     </header>
 
-    <!-- Reservation Section -->
-    <section class="reservation" id="reservation">
-        <div class="middle_text">
-            <h4>Reserve a Table</h4>
-            <h2>Book Your Spot</h2>
+    <!-- Order Confirmation Section -->
+    <section class="order-confirmation" id="order-confirmation">
+        <div class="confirmation-container">
+            <!-- Success Animation -->
+            <div class="success-animation">
+                <div class="checkmark-circle">
+                    <div class="checkmark"></div>
+                </div>
+            </div>
+
+            <!-- Thank You Message -->
+            <div class="thank-you-content">
+                <h1 class="fade-in-up">Thank You!</h1>
+                <h2 class="fade-in-up delay-1">Your Order Has Been Confirmed</h2>
+                <p class="fade-in-up delay-2">We're preparing your delicious meal with love and care.</p>
+                
+                <!-- Order Details -->
+                <div class="order-details fade-in-up delay-3">
+                    <h3>Order Details</h3>
+                    <div class="order-info">
+                        <div class="info-item">
+                            <i class='bx bx-receipt'></i>
+                            <span>Order #12345</span>
+                        </div>
+                        <div class="info-item">
+                            <i class='bx bx-time'></i>
+                            <span>Estimated Delivery: 25-30 minutes</span>
+                        </div>
+                        <div class="info-item">
+                            <i class='bx bx-phone'></i>
+                            <span>We'll call you at: +92 300 1234567</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Delivery Boy Animation -->
+            <div class="delivery-animation fade-in-up delay-4">
+                <p class="delivery-text">Your order is on its way!</p>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons fade-in-up delay-5">
+                <a href="shop.html" class="btn">Order Again<i class='bx bxs-right-arrow'></i></a>
+                <a href="index.html" class="btn-secondary">Back to Home<i class='bx bx-home'></i></a>
+            </div>
         </div>
 
-        <div class="reservation_form_container">
-            <form id="reservationForm" onsubmit="handleReservationSubmit(event)">
-                <div class="form_group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form_group">
-                    <input type="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form_group">
-                    <input type="tel" name="phone" placeholder="Your Phone" required>
-                </div>
-                <div class="form_group">
-                    <input type="date" name="date" required>
-                </div>
-                <div class="form_group">
-                    <input type="time" name="time" required>
-                </div>
-                <div class="form_group">
-                    <input type="number" name="guests" placeholder="Number of Guests" min="1" required>
-                </div>
-                <div class="form_group full_width">
-                    <textarea name="requests" placeholder="Special Requests (optional)" rows="4"></textarea>
-                </div>
-                <button type="submit" class="btn">Reserve Now<i class='bx bxs-right-arrow'></i></button>
-            </form>
+        <!-- Floating Food Icons -->
+        <div class="floating-icons">
+            <div class="floating-icon icon-1">🍕</div>
+            <div class="floating-icon icon-2">🍔</div>
+            <div class="floating-icon icon-3">🍗</div>
+            <div class="floating-icon icon-4">🥗</div>
+            <div class="floating-icon icon-5">🍜</div>
+            <div class="floating-icon icon-6">🌮</div>
         </div>
     </section>
 
@@ -72,7 +97,8 @@
             <div class="footer_section">
                 <div class="footer_logo">
                     <a href="#" class="logo">MOM's KITCHEN</a>
-                    <p>Serving delicious, homemade meals with love and care. Experience the true taste of authentic cuisine in a warm, welcoming atmosphere.</p>
+                    <p>Serving delicious, homemade meals with love and care. Experience the true taste of authentic
+                        cuisine in a warm, welcoming atmosphere.</p>
                     <div class="footer_social">
                         <a href="#"><i class='bx bxl-facebook'></i></a>
                         <a href="#"><i class='bx bxl-instagram'></i></a>
@@ -85,10 +111,10 @@
             <div class="footer_section">
                 <h3>Quick Links</h3>
                 <ul class="footer_links">
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
                     <li><a href="shop.html">Our Menu</a></li>
-                    <li><a href="index.html#customer">Reviews</a></li>
+                    <li><a href="#customer">Reviews</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -138,14 +164,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        function handleReservationSubmit(event) {
-            event.preventDefault();
-            alert('Thank you! Your reservation has been submitted.');
-            document.getElementById('reservationForm').reset();
-        }
-    </script>
 </body>
 
 </html>

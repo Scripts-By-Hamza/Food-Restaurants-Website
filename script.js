@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h6>${product.price}</h6>
                     </div>
                     <div class="s-btnn">
-                        <a href="#">Order Now</a>
+                        <a href="order-confirmed.html">Order Now</a>
                     </div>
                 </div>
                 <div class="top_icon">
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h6>${deal.price}</h6>
                     </div>
                     <div class="s-btnn">
-                        <a href="#">Order Now</a>
+                        <a href="order-confirmed.html">Order Now</a>
                     </div>
                 </div>
                 <div class="top_icon">
